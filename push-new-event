@@ -1,0 +1,38 @@
+POST http://orion.lab.fi-ware.eu:1026/v1/updateContext
+
+HEADERS
+Content-Type: application/json
+Accept: application/json
+X-Auth-Token: 1234
+
+BODY
+{
+  "contextElements": [{
+    "type": "some-unique-key",
+    "isPattern": "false",
+    "id": "your-id-prefix-and-an-id",
+    "attributes": [
+      {
+        "name": "shop",
+        "type": "string",
+        "value": "sample-shop"
+      },
+      {
+        "name": "status",
+        "type": "string",
+        "value": "created"
+      },
+      {
+        "name": "courier",
+        "type": "string",
+        "value": "gls"
+      },
+      {
+        "name": "trackingnumber",
+        "type": "string",
+        "value": "4442352353234"
+      }
+    ]
+  }],
+  "updateAction": "APPEND"
+}
