@@ -1,0 +1,11 @@
+{
+  "server": {
+    "port": "46665"
+  },
+  "mongo": {
+    "url": "mongodb://admin:test@localhost:27017"
+  },
+  "info": {
+    "source": "Orion"
+  }
+}
